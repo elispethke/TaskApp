@@ -68,7 +68,7 @@ The screen where you add a new task with a title and description:
 
 ### Task Completed
 This shows the interface after marking a task as completed:
-![Task Completed Screen](assets/images/Delear.png)
+![Task Completed Screen](assets/images/Deletar.png)
 
 ## Technologies Used
 
