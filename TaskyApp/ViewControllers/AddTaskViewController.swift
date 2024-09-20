@@ -13,7 +13,7 @@ class AddTaskViewController: UIViewController {
     private var addNewTaskLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Adicionar Tarefa"
+        label.text = "Add Task"
         label.font = UIFont.boldSystemFont(ofSize: 20.0)
         label.textColor = UIColor(named: AssetsConstants.darkPurple)
         label.textAlignment = .center
@@ -45,7 +45,7 @@ class AddTaskViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textColor = UIColor(named: AssetsConstants.darkPurple)
-        label.text = "Descrição"
+        label.text = "Description"
         return label
         
     }()
@@ -53,7 +53,7 @@ class AddTaskViewController: UIViewController {
     private lazy var descriptionTextField: UITextField = {
         let textField  = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.placeholder = "Descriçao da Tarefa"
+        textField.placeholder = "Task Description"
         textField.borderStyle = .roundedRect
         return textField
         
@@ -62,7 +62,7 @@ class AddTaskViewController: UIViewController {
     private lazy var saveTaskButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Salvar", for: .normal)
+        button.setTitle("Save", for: .normal)
         button.addTarget(self, action: #selector(didTapSaveTaskButton), for: .touchUpInside)
         button.titleLabel?.font = .systemFont(ofSize: 18.0, weight: .bold)
         return button
@@ -112,7 +112,7 @@ class AddTaskViewController: UIViewController {
     
     @objc private func didTapSaveTaskButton() {
             guard let title = titleTextField.text,!title.isEmpty else {
-                print("Precisa de um título")
+                print("You need a title")
                 return
             }
                     

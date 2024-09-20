@@ -17,7 +17,7 @@ class TasksTableViewHeader: UIView, UISearchBarDelegate {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Tarefas"
+        label.text = "Tasks"
         label.font = .systemFont(ofSize: 20.0, weight: .bold)
         label.textColor = UIColor(named: AssetsConstants.darkPurple)
         label.textAlignment = .center
